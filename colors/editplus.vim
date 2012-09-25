@@ -1,7 +1,7 @@
 " Vim colorscheme
 " Author:  Gary Willoughby 
-" Version: 1.1
-" Date:    24th August 2011
+" Version: 1.2
+" Date:    24th September 2012
 
 set background=light
 hi clear
@@ -15,6 +15,7 @@ hi Blank                           guibg=white   guifg=white   gui=none
 hi Normal                          guibg=white   guifg=black   gui=none
 hi Cursor                          guibg=#555555               gui=none
 hi CursorLine                      guibg=#E8E8E8               gui=none
+hi CursorLineNr                    guibg=#696969 guifg=white   gui=none
 hi Directory                       guibg=bg      guifg=blue    gui=none
 hi FoldColumn                      guibg=#696969 guifg=white   gui=none
 hi Folded                          guibg=#E8E8E8 guifg=#808080 gui=none
@@ -27,6 +28,7 @@ hi StatusLineNC                    guibg=#D4D0C8 guifg=black   gui=italic
 hi Title                           guibg=bg      guifg=black   gui=none
 hi Visual                          guibg=#316AC5 guifg=white   gui=none
 hi WarningMsg                      guibg=bg      guifg=red     gui=none
+hi! link SignColumn                CursorLine
 
 " Popup menus
 hi Pmenu                           guibg=#E5E1CB guifg=#756D5B gui=none
@@ -182,3 +184,24 @@ hi! link NERDTreeOpenable          Type
 hi! link NERDTreeFlag              Blank
 hi! link NERDTreeRO                Normal
 hi! link NERDTreeCurrentNode       Normal
+
+" CtrlP
+hi! link CtrlPNoEntries ErrorMsg
+hi! link CtrlPMatch     IncSearch
+hi! link CtrlPLinePre   NonText
+hi! link CtrlPPrtBase   Comment
+hi! link CtrlPPrtText   Function
+hi! link CtrlPPrtCursor PmenuSel
+hi! link CtrlPTabExtra  Comment
+hi! link CtrlPBufName   Function
+hi! link CtrlPTagKind   Type
+hi! link CtrlPqfLineCol Comment
+hi! link CtrlPUndoT     Normal
+hi! link CtrlPUndoBr    Normal
+hi! link CtrlPUndoNr    Normal
+hi! link CtrlPUndoSv    Comment
+hi! link CtrlPUndoPo    Comment
+hi! link CtrlPBookmark  Identifier
+hi! link CtrlPMode1     StatusLine
+hi! link CtrlPMode2     StatusLine
+hi! link CtrlPStats     Function
