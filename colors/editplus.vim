@@ -1,6 +1,6 @@
 " Vim colorscheme
 " Author:  Gary Willoughby 
-" Version: 1.2
+" Version: 1.3
 " Date:    24th September 2012
 
 set background=light
@@ -20,7 +20,7 @@ hi Directory                       guibg=bg      guifg=blue    gui=none
 hi FoldColumn                      guibg=#696969 guifg=white   gui=none
 hi Folded                          guibg=#E8E8E8 guifg=#808080 gui=none
 hi LineNr                          guibg=#696969 guifg=white   gui=none
-hi VertSplit                       guibg=black   guifg=white   gui=none
+hi VertSplit                       guibg=#D4D0C8 guifg=white   gui=none
 hi ErrorMsg                        guibg=bg      guifg=red     gui=none
 hi MatchParen                      guibg=#A6CAF0 guifg=black   gui=none
 hi StatusLine                      guibg=#D4D0C8 guifg=black   gui=none
@@ -180,7 +180,7 @@ hi! link NERDTreeDir               Directory
 hi! link NERDTreeUp                Type
 hi! link NERDTreeCWD               Comment
 hi! link NERDTreeLink              Normal
-hi! link NERDTreeOpenable          Type
+hi! link NERDTreeOpenable          NonText
 hi! link NERDTreeFlag              Blank
 hi! link NERDTreeRO                Normal
 hi! link NERDTreeCurrentNode       Normal
